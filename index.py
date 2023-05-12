@@ -9,9 +9,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    html_path = "firebase_update.html"
-    return render_template(html_path)
+    return render_template("firebase_update.html")
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
